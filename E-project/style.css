@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.991);
+}
+
+
+/* Navbar */
+.navebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+
+}
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.nav-item:hover .nav-link {
+    border-radius: 20px;
+     background:rgb(50, 104, 198);
+    color: white;
+}
+/* star containe background*/
+.star_gazing-container{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+  /*  background: url("planet.jpg") no-repeat center center;*/
+    background-size:cover;
+    margin-top: 29px;
+
+}
+/*star containe home*/
+.star_gazing-container .home1{
+    margin-top: 50px;
+    padding: 30px;
+}
+.home1 h1{
+    color: white ;
+    text-align: center;
+}
+.home1 p{
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+/*star containe planet*/
+.star_gazing-container .planet1{
+    padding: 30px;
+}
+.planet1 h1{
+    color: white;
+    text-align: center;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+/*planet container slide div class*/
+.planet_container .card{
+    
+    background: rgba(0, 0, 0, 0.973);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+} 
+
+.planet_container .card img{
+    object-fit:contain;
+}
+.planet_container {
+    margin: 60px 0;
+}
+
+.planet_container .slick-slide p {
+    display:none;
+}
+
+.planet_container .slick-slide .card image{
+    display:none;
+}
+
+
+.planet_container .slick-active.slick-center p{
+    display:block;
+    color: white;
+}
+
+.planet_container .slick-active.slick-center {
+    display:block;
+}
+
+/* planet card*/
+ .card-body  .card-text{ 
+    border: none;
+}
+#planetDescription {
+    text-align: center;
+    color: white;
+}
+#planets{
+    text-align: center;
+    color: white;
+}
+/*star containe star*/
+.star_gazing-container .star{
+    padding: 30px;
+}
+.star h1{
+    color: white;
+}
+
+/*star containe constellation*/
+.star_gazing-container .constellations{
+    padding: 30px;
+}
+.constellations{
+    color: white;
+}
+
+/*star containe comet*/
+.star_gazing-container .comet{
+    padding: 30px;
+}
+.comet h1{
+    color: white;
+}
+
+/*star containe latest devlopment*/
+.star_gazing-container .lastest_development{
+    padding: 30px;
+}
+.lastest_development h1{
+    color: white;
+}
+
+/*star containe observation*/
+.star_gazing-container .observation{
+    padding: 30px;
+}
+.observation h1{
+    color: white;
+}
+
+.observation h3{
+    color: white;
+}
+/*star containe gallery*/
+.star_gazing-container .gallery{
+    padding: 30px;
+}
+.gallery h1{
+    color: white;
+}
+
+/*star containe about*/
+.star_gazing-container .about{
+    padding: 30px;
+}
+.about h1{
+    color: white;
+}
+.about .open{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*star containe contact*/
+.star_gazing-container .contact{
+    padding: 30px;
+}
+.contact :where(h1,h3){
+    color: white;
+}
+.contact .info{
+    font-size: 25px;
+}
+.contact :where(h3,.info){
+    text-align: center;
+    text-decoration: none;
+}
+/* login page */
+.login-page {
+    width: 100%;
+    max-width: 360px;
+    padding: 2% 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    position: relative;
+    z-index: 1;
+    background: rgba(211, 208, 208, 0.774);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+  }
+  
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .form textarea {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .form label {
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.682);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: rgb(50, 104, 198);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form button:hover {
+    background: rgb(50, 104, 198);
+    color: #fff;
+  }
+  
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  
+  .form .message a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .form .register-form {
+    display: none;
+  }
+  iframe{
+    width: 100%;
+    height: 400px; 
+  }
+
+
+footer {
+    background-color: rgb(43, 48, 53); 
+    color-scheme: dark;
+    position: fixed;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    
+    /* Flexbox properties */
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+footer #datetime {
+    text-align: left;
+}
+
+.visitor-count {
+    text-align: end;
+}
+
+
+@media (max-width: 600px) {
+    .home1 h1, .planet1 h1 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.9rem;
+    }
+    }
+
+
+
+
+
+
+
+
